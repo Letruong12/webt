@@ -1,0 +1,89 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/*body {
+	min-height: 1200px;
+}*/
+/*root*/
+:root {
+	--blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+/* section đăng ký: start */
+.form-user {
+    margin: 10px 0;
+    background: #fff;
+    border: 1px solid #dedede;
+}
+.form-user h2 {
+	display: block;
+	text-align: center;
+	margin: 0;
+	padding: 20px 0;
+	text-transform: uppercase;
+	font-size: 23px;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+.form-user ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.form-user  ul > li {
+	margin-bottom: 15px;
+}
+.form-user ul li input[type=text],
+.form-user ul li input[type=password],
+.form-user ul li input[type=email] {
+	width: 100%;
+	color: #616365;
+    border: 1px solid #d1d1d1;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+.form-user ul li.btns #btnSubmit {
+	margin: 10px 0;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    background: #f48473;
+    border: 1px solid #f48473;
+    color: #fff;
+}
+input {
+	outline: none;
+}
+/* section đăng ký: end */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .log-reg {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 739px) {
+    .log-reg {
+        margin-top: 100px;
+    }
+}

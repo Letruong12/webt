@@ -1,0 +1,148 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 20px !important;
+}
+:root {
+	--blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.item-list{
+	margin: 10px 10px 10px 0px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+}
+.item-list .list{
+	width: 25%;
+    margin-right: 3%;
+    overflow: hidden;
+    display: inline-block;
+}
+.item-list .intro{
+	display: inline-block;
+    width: 70%;
+    vertical-align: top;
+}
+div{
+	display: block;
+}
+img{
+	max-width: 100%;
+}
+a , p{
+	font-size: 14px;
+}
+a, h1, h2, h3{
+	color: #353535;
+}
+a{
+	text-decoration: none;
+	background-color: transparent;
+}
+
+.main-tin-tuc .main-tin-tuc-2 h3{
+	font-size: 30px;
+}
+
+.row {
+	display: flex;	/*item nam ngang*/
+	flex-wrap: wrap; /*dua xuong dong khi kich thuoc item vuot qua row*/
+	margin: 0 -4px;
+}
+.c-8 {
+	flex: 0 0 calc((100% / 12) * 8);
+	max-width: calc((100% / 12) * 8);
+}
+.c-12 {
+	flex: 0 0 calc((100% / 12) * 12);
+	max-width: calc((100% / 12) * 12);
+}
+.c-4 {
+	flex: 0 0 calc(100% / 3);
+	max-width: calc(100% / 3);
+}
+.main-tin-tuc .main-tin-tuc-1{
+	width: 296%;
+}
+.img-news .img-news-cate{
+	width: 30%;
+    margin-right: 3%;
+    overflow: hidden;
+    display: inline-block;
+    height: 60px;
+}
+.img-news{
+	display: flex;
+	padding-bottom: 62px;
+	border-bottom: 1px solid #ccc;
+	margin: 15px 0;
+	font-size: 30px;
+}
+.title-news-cate{
+	display: inline-block;
+    width: 65%;
+    vertical-align: top;
+}
+
+.main-tin-tuc{
+	display: flex;
+	width: 80%;
+	margin: 30px auto 10px auto;
+}
+.content{
+	font-size: 16px;
+}
+.intro h2{
+	
+	font-family: "helveticaneue",sans-serif;
+	margin-bottom: 4px;
+}
+.intro a{
+	font-size: 21px;
+}
+/*Mobile: width < 740px*/
+@media( max-width: 46.1875em){
+	.main-tin-tuc{
+		flex-direction: column;
+	}
+	.main-tin-tuc .main-tin-tuc-1{
+		width: 107%;
+	}
+}
+
+/*Tablet: width >= 740px and width < 1024px*/
+@media( min-width: 46.25em) and ( max-width: 63.9375em){
+	.main-tin-tuc .main-tin-tuc-1{
+		width: 528%;
+	}
+}

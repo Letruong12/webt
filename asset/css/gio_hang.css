@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "helveticaneue",sans-serif;
+}
+
+.main_gio_hang{
+    width: 80%;
+    margin: 10px auto auto auto;
+}
+
+.header_gio_hang{
+    text-align: center;
+}
+
+.table_gio_hang{
+    width: 100%;
+    text-align: center;
+    padding: 10px 80px 10px 80px;
+}
+
+.table_gio_hang tr{
+    background-color: #f6f6f6;
+ 
+}
+
+.table_gio_hang  th{
+    padding: 20px 0px 20px 0px;
+}
+
+.table_gio_hang .text_align_left{
+    text-align: left;
+    padding-left: 20px;
+ 
+}
+
+.text_align_left{
+   display: flex;
+   align-items: center;
+}
+
+.table_gio_hang a{
+    text-decoration: none;
+    color: rgb(214, 53, 53);
+}
+
+.input_img{
+    display: flex;
+    align-items: center;
+    width: 80px;
+     height: 90px;
+}
+
+.input_img img{
+    width: 100px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.nhap{
+    text-align: center;
+}
+
+#tru , #cong{
+    width: 15px;
+    height: 20px;
+}
+
+
+@media (max-width: 739px) {
+	.soluong{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .table_gio_hang {
+        padding: 10px 0 10px 0;
+    }
+}
+
+
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+	.soluong{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

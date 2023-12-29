@@ -1,0 +1,221 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/*body {
+	min-height: 1200px;
+}*/
+/*root*/
+:root {
+	--blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+/* content policy: start */
+
+.home-policy .item-policy {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.home-policy .item-policy .info-policy h2 {
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 22px;
+}
+.home-policy .item-policy .info-policy p {
+    margin-bottom: 25px;
+}
+.home-policy .item-policy .t-policy{
+    width: 1px;
+    height: 70%;
+    background: #bbb;
+    margin-right: 15px;
+}
+.home-page .home-policy .item-policy:first-child .t-policy {
+    display: none;
+}
+/* content policy: end */
+
+/* product-h: start */
+.product-h {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.product-h .content-pr-h {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+}
+.product-h .content-pr-h::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    border-radius: 50%;
+    border: none;
+    background: var(--danger);
+    margin-bottom: 30px;
+}
+.banner-product-home {
+    width: 20%;
+    height: auto;
+    border: 1px solid #d6d6d6;
+    float: left;
+}
+.banner-product-home a {
+    display: block;
+    width: 100%;
+}
+.banner-product-home a img {
+    object-fit: cover;
+    width: 100%;
+    display: block;
+}
+/* product-hot: end */
+
+/* slider: start */
+.product-slider {
+    width: 80%;
+    height: 226px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.product-slider .left,
+.product-slider .right,
+.product-slider .left-n,
+.product-slider .right-n {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: 600;
+}
+.product-slider .left,
+.product-slider .left-n {
+    left: 0;
+}
+.product-slider .right,
+.product-slider .right-n {
+    right: 0;
+}
+
+.product-list-item {
+    width: 200%;
+    height: 100%;
+    display: flex;
+    transition: all 2s ease;
+    transform: translateX(0);
+}
+
+
+.product-list-item .p-item {
+    border: 1px solid #999;
+    display: flex;
+    flex-direction: column;
+    margin: 0 18px;
+}
+.p-item .p-item-img {
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+}
+.product-list-item .p-item img {
+    width: 190px;
+    height: auto;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+}
+.product-list-item .p-item img:hover {
+    transform: scale(2);
+}
+.p-item h3 {
+    margin: 5px 0 5px 10px;
+}
+.p-item p {
+    margin-left: 10px;
+}
+/* slider: end */
+
+.content-premium-m-c {
+    display: none;
+    width: 100%;
+    height: 402px;
+    background: url(../image/img-sub-nav-1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 110px;
+}
+@media (min-width: 740px) and (max-width: 1023px){
+    .content-premium {
+        display: none;
+    }
+    .content-premium-m-c {
+        display: block;
+    }
+    .banner-product-home {
+        display: none;
+    }
+    .product-slider {
+        width: 100%;
+    }
+    .conten_img {
+        display: none;
+    }
+    .conten_1 .conten_2 .box_1 {
+        width: 48%;
+    }
+}
+@media (max-width: 739px){
+    .content-premium {
+        display: none;
+    }
+    .banner-product-home {
+        display: none;
+    }
+    .home-page {
+        margin-top: 90px;
+    }
+    .home-page .home-policy .item-policy:first-child .t-policy {
+        display: block;
+    }
+    .product-slider {
+        width: 100%;
+    }
+    .conten_img {
+        display: none;
+    }
+    .conten_1 .conten_2 .box_1 {
+        width: 47%;
+        height: 220px;
+    }
+    .conten_1 .conten_2 .box_1 img {
+        height: 60%;
+    }
+}

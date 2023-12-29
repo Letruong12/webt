@@ -1,0 +1,24 @@
+.ganuong{
+	margin: 50px;
+}
+.new-details div img {
+	width: 100%;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+	.ganuong {
+		margin-top: 100pxx;
+	}
+	.new-details div img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 739px) {
+	.ganuong {
+		margin-top: 100pxx;
+	}
+	.new-details div img {
+		width: 100%;
+	}
+}

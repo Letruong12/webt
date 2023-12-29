@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "helveticaneue",sans-serif;
+}
+.header{
+    display: flex;
+   justify-content: center;
+   margin: 30px 0px 68px 0px;
+   font-size: 30px;
+}
+
+.main{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin: 0 auto 30px auto;
+}
+
+.menu{
+    border:1px solid rgba(92, 91, 91, 0.675);
+}
+
+.box_menu{
+    width: 276px;
+    height: 50px;
+    background-color: #eb1c24;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 10px;
+    margin-bottom: 25px;
+}
+
+.box_menu i{
+    font-size: 25px;
+    padding-right: 5px;
+}
+
+.box_conten{
+   
+}
+
+.box_conten li{
+list-style: none;
+padding-bottom: 15px;
+padding-left: 13px;
+}
+
+.box_conten li:last-child{
+    padding-bottom: 20px;
+}
+
+.box_conten a{
+    text-decoration: none;
+    color: black;
+}
+
+.box_conten a:hover{
+    color: #eb1c24;
+    transition: 0.2s;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 45px;
+}
+
+.tim_kiem{
+    display: flex;
+    justify-content: center;
+}
+
+.tim_kiem input{
+    width: 430px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 7px;
+}
+
+.tim_kiem button{
+    width: 115px;
+    height: 50px;
+    background-color:#eb1c24;
+    color: white;
+    border-color: #eb1c24;
+    font-size: 20px;
+}
+
+.table p{
+    font-size: 25px;
+}
+
+.table_1 {
+   margin-top: 50px;
+}
+
+table{
+    width: 100%;
+}
+
+table , th{
+    border: 1px solid #dee2e6;
+    font-size: 20px;
+}
+
+th , td{
+    padding: 18px;
+    text-align: center;
+}
+
+td{
+    color: #cd3831;
+}
+.footer{
+    margin-top: 25px;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .main {
+        width: 70%;
+        margin: 100px auto 30px auto;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 730px) {
+    .main {
+        width: 100%;
+        margin: 100px auto 30px auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input {
+        margin-left: 0;
+    }
+    th {
+        padding: 0;
+    }
+}

@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*body {
+    min-height: 1200px;
+}*/
+/*root*/
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+html{
+    font-family: "helveticaneue",sans-serif;
+}
+
+
+.main_1{
+   width: 80%;
+   margin: 10px auto 0px auto;
+}
+
+.header_1{
+    font-size: 20px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.header_1 p::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: #eb1c24;
+    position: absolute;
+    top: 115%;
+    left: 0%;
+   
+}
+
+.content{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box_1{
+    width: 24%;
+    height: 350px;
+    border: 1px solid black;
+    padding-left: 10px;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+.box_1 img{
+    width: 100%;
+    height: auto;
+}
+
+.box_1 p{
+    padding-bottom: 10px;
+}
+
+.box_1 .first_chill{
+    font-weight: bold;
+}
+
+.box_1 .last_Chill{
+    text-decoration: line-through;
+    color: #9c9d9e;
+}
+
+.box_1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(41, 38, 38);
+    color: white;
+    padding: 50px 70px 0px 70px;
+}
+
+
+
+.footer .thong_tin{
+    width: 487px;
+    height: 178px;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover{
+    color: rgb(186, 43, 43);
+    transition: 0.15s;
+}
+
+
+@media (max-width: 739px) {
+	.box_1{
+        height: 165px;
+        font-size: 7px;
+    }
+    .main_1 {
+        width: 95%;
+        margin: 100px auto 0 auto;
+    }
+    .main_1 .img img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+	.box_1{
+        height: 230px;
+        font-size: 10px;
+    }
+    .main_1 {
+        width: 95%;
+        margin: 100px auto 0 auto;
+    }
+    .main_1 .img img {
+        width: 98%;
+        height: auto;
+    }
+}
